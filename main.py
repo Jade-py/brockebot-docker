@@ -1,4 +1,3 @@
-from crontab import CronTab
 import requests
 from datetime import datetime, timedelta
 import calendar
@@ -11,7 +10,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 API_ENDPOINT = "http://127.0.0.1:8000/"
 
 # Replace with your Telegram Bot Token
-TOKEN = "7101959015:AAHBQJr2-PWPzNomBmQVdX98RdPKuh4zOyg"
+TOKEN = os.
 
 # Define conversation states
 CHOOSING, SELECT_LIST_TYPE, SELECT_DATE, EVENT, PRICE = range(5)
